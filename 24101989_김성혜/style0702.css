@@ -1,8 +1,0 @@
-.container {width: 500px; border: 1px solid #222;}
-h1 {background-color: #222; color: #fff; text-align: center;}
-.book1 {
-    list-style-image: url(dot.png);
-}
-.book2 {
-    list-style-position: outside;
-}
