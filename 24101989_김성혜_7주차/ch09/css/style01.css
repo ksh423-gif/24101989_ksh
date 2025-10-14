@@ -1,0 +1,21 @@
+body {
+    background-image: url(../images/bg1.jpg);
+}
+.boxstyle {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+#box1 {
+    background-color: #9f6666;
+    background-clip: border-box;
+}
+#box2 {
+    background-color: #799f66;
+    background-clip: padding-box;
+}
+#box3 {
+    background-color: #66699f;
+    background-clip: content-box;
+}
