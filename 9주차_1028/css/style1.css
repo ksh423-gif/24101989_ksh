@@ -1,0 +1,22 @@
+.container {
+    width: 700;
+    height: 250px;
+    border: 1px solid #222;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: row;
+}
+.box {
+    padding: 5px 45px;
+    margin: 5px;
+    width: 80px;
+}
+.box:nth-child(odd) {
+    background-color: aqua;
+}
+.box:nth-child(even) {
+    background-color: pink;
+}
+#opt1 {
+    flex-flow: row wrap;
+}

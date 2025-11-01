@@ -1,0 +1,32 @@
+.container {
+      width:800px;
+      height:100px;
+      display:flex;
+      border:1px solid #222;
+      gap: 10px;
+    }                               
+    .box {
+      flex-basis: 300px; 
+    }
+    .box:nth-child(odd) {
+      background-color: #ffc400;
+    }
+    .box:nth-child(even) {
+      background-color: #a6ff00;
+    }
+    p {
+      font-weight: bold;
+      text-align: center;
+    }
+    #box1 {
+      flex-shrink: 1;
+    }
+    #box2 {
+      flex-shrink: 0;
+    }
+    #box3 {
+      flex-shrink: 1;
+    }
+    #box4 {
+      flex-shrink: 2;
+    }
