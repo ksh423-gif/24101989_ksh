@@ -1,0 +1,41 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.navi {
+    width: 960px;
+    height: 60px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.navi ul {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.navi ul li {
+    float: left;
+    width: 150px;
+    padding: 10px;
+}
+
+.navi a:link, .navi a:visited {
+    display: block;
+    font-size: 14px;
+    color: #000;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navi a:hover, .naiv a:focus {
+    background-color: #222;
+    color: #fff;
+}
+
+.navi a:active {
+    background-color: #f00;
+}
