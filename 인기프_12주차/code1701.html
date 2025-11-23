@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var seed = 10;
+        function displayNumber() {
+            var seed = 5;
+            console.log('seed is ${seed}');
+            // console.log('y is ${y}');
+            // var y = 5;
+        }
+        displayNumber();
+    </script> -->
+
+    <!-- <script>
+        let x= 10;
+        let y= 20;
+        function addNumber(x, y) {
+            let x, y;
+            let result;
+            result = x + y;
+            return result;
+        }
+        console.log(addNumber(x, y));
+        console.log(addNumber(5, 20));
+     </script>  -->
+
+     <script>
+        let number1 = parseInt(prompt('시작 숫자는'));
+        let number2 = parseInt(prompt('종료 숫자는'));
+        function loopsum(num1, num2) {
+            let sum = 0;
+            for(let i = num1; i <= nm2; i++) {
+                sum += i;
+            }
+            return sum;
+        }
+        function max(num1, num2) {
+            return num1 > num2 ? num1 : num2;
+        }
+        document.writeln('${number1} ~ ${number2} 합은 ${loopsum(number1,number2)}');
+        document.wirteln('큰 수는 ${max(number1, number2)}<br>');
+     </script>
+</body>
+</html>

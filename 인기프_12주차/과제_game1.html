@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>가위바위보 (심플 버전)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>가위바위보 게임 ✌️✊✋</h1>
+  <p>버튼을 눌러서 플레이!</p>
+
+  <div class="choices">
+    <button onclick="play('가위')">✌️ 가위</button>
+    <button onclick="play('바위')">✊ 바위</button>
+    <button onclick="play('보')">✋ 보</button>
+  </div>
+
+  <div id="result">결과가 여기에 표시됩니다.</div>
+  <div id="score">플레이어 0 : 0 컴퓨터</div>
+
+  <script>
+    let playerScore = 0;
+    let compScore = 0;
+
+    function play(player) {
+      const arr = ["가위", "바위", "보"];
+      const comp = arr[Math.floor(Math.random() * 3)];
+
+      let text = `플레이어: ${player} / 컴퓨터: ${comp}<br>`;
+
+      if (player === comp) {
+        text += "무승부!";
+      } else if (
+        (player === "가위" && comp === "보") ||
+        (player === "바위" && comp === "가위") ||
+        (player === "보" && comp === "바위")
+      ) {
+        text += "🎉 플레이어 승!";
+        playerScore++;
+      } else {
+        text += "😢 컴퓨터 승...";
+        compScore++;
+      }
+
+      document.getElementById("result").innerHTML = text;
+      document.getElementById("score").textContent = `플레이어 ${playerScore} : ${compScore} 컴퓨터`;
+    }
+    
+    // 키보드 입력: 1=가위, 2=바위, 3=보
+    window.addEventListener('keydown', function(e) {
+      if (e.key === '1') play('가위');
+      if (e.key === '2') play('바위');
+      if (e.key === '3') play('보');
+    });
+  </script>
+
+</body>
+</html>
